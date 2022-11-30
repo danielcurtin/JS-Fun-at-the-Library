@@ -42,8 +42,6 @@ var isFavorite = false;
 // comparison operator.
 
 var isShortStory = pages < 25;
-// A ternary operator checks if the condition (var pages < 25) is true or false, and will give an output based on the result
-// First output is for truth and second output is for false
 
 //------------------------- Conditionals -------------------------//
 
