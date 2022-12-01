@@ -24,7 +24,7 @@ function listTitles (array) {
       list += array[i].title;
     }
   }
-  return list
+  return list;
 };
 
 function searchShelf (shelf, title) {
@@ -40,8 +40,8 @@ function searchShelf (shelf, title) {
   }
   if (loop === false) {
     return loop;
-  }
-}
+  };
+};
 
 module.exports = {
   shelfBook,
