@@ -11,14 +11,9 @@ function createLibrary (name) {
 };
 
 function addBook (library, book) {
-  if (book.genre === "fantasy") {
-    library.shelves.fantasy.push(book);
-  } else if (book.genre === "nonFiction") {
-    library.shelves.nonFiction.push(book);
-  } else {
-    library.shelves.fiction.push(book);
-  };
-};
+  var gen = book.genre;
+  library.shelves[gen].push(book);
+}
 
 function checkoutBook (library, book, genre) {
   if (genre === "fantasy") {
